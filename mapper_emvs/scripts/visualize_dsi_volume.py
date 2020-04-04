@@ -17,7 +17,7 @@ if __name__ == "__main__":
     
     # Reorder axis so that the Z axis points forward instead of up
     vol = np.swapaxes(vol, 0, 1)
-    vol = np.flip(vol, axis=0)
+    vol = np.fliplr(vol)
     
     t = vv.volshow(vol, renderStyle = 'mip')
     t.colormap = vv.CM_HOT
